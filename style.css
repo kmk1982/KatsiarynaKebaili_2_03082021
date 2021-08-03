@@ -136,3 +136,15 @@ padding-left: 20px;
   color: #0065fc;
   background-color: #deebff;
 }
+/* INFO ICONE */
+.info {
+  display: flex;
+  align-items: center;
+}
+.parentIcon {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #f2f2f2;
+  border-radius: 25px;
+  margin-right: 5px;
+}
