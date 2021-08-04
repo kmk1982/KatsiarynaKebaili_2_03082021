@@ -115,6 +115,10 @@ padding-left: 20px;
   cursor: pointer;
   border-radius: 0 10px 10px 0;
 }
+.buttonSearch:hover {
+  color: #0065fc;
+  background-color:#f2f2f2;
+}
 /* Filtres */
 .margFiltre {
   margin-top: 50px;
