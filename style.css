@@ -79,7 +79,7 @@ body {
   border-top: 1px solid transparent; 
 }
 .bordureNav:hover {
-  border-top: 1px solid #0065fc;
+  border-top: 2px solid #0065fc;
   cursor: pointer
 }   
 .bordureNav:hover > a {
