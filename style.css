@@ -63,10 +63,13 @@ body {
 }
 /* NAV */
 .sizeNav {
-  height: 100px;
+  height: auto;
 }
 .sizeLiens {
-  width: 45%;
+  width: 100%;
+}
+.sizeLien12 {
+  margin-left: 60%;
 }
 .sizeLien {
   width: 140px;
@@ -91,6 +94,9 @@ body {
   height: 50px
 }
 /*HEADER*/
+.desktopNone {
+  display: none;
+}
 .bordureSearch {
   width: 400px;
   border-radius: 10px;
@@ -205,6 +211,8 @@ padding-left: 20px;
   background-color: white;
   padding: 1%;
   border-radius: 20px;
+  /* rajout pour en mobile et desktop */
+  box-shadow: 5px 5px 5px 1px #f2f2f2;
 }
 .cubeHebergements:hover {
   cursor: pointer;
@@ -421,4 +429,187 @@ padding-left: 20px;
 }
 .divLienFoot{
   height: 30px;
+}
+/* responsive */
+@media screen and (max-width: 1295px) {
+  .sizeLien12 {
+    margin-left: 35%;
+  } 
+  .cubeDetailsHebergements {
+    min-height: 150px;
+  }
+  .sizeHebergements {
+    min-height: auto;
+    padding: 20px;
+  }
+  .sizePopulaires {
+    min-height: auto;
+    padding: 20px;
+  }
+  .tabletteSizeTitrePop {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 990px) {
+  .mobileFiltreWrap {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .filtreTexteIcons {
+    margin-bottom: 20px;
+  }
+  #hebergements {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .blocPopulaires {
+    flex: none;
+    width: 90%;
+    margin-left: 0;
+    padding: 5%;
+  }
+  .blocHebergements {
+    flex: none;
+    width: 90%;
+    margin-right: 0;
+    margin-top: 50px;
+    padding: 5%;
+  }
+}
+@media screen and (max-width: 770px) {
+  .sizeLiens {
+    width: 90%;
+  }
+  .sizeLien12 {
+    margin-left: 20%;
+  }
+  .blocHebergements {
+    height: auto;
+  }
+  .bloc1 {
+    flex-direction: column;
+    margin-bottom:0;
+  }
+  .bloc2 {
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .cubeHebergements {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .cubeDetailsHebergements {
+    min-height: auto;
+  }
+  .blocActivites {
+    flex-direction: column;
+    height: auto;
+  }
+  .cubeActivites {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .blocActivites2356 {
+    width: 100%;
+    height: auto;
+  }
+  .cubeActivites2356 {
+    margin-bottom: 50px;
+  }
+  .imgActivites1,
+  .imgActivites2,
+  .imgActivites3,
+  .imgActivites4,
+  .imgActivites5,
+  .imgActivites6 {
+    height: 200px;
+  }
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding-left: 20px;
+  }
+  .margeBlocFoot1 {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width:600px) {
+  .sizeLien {
+    flex-direction: row;
+  }
+  .sizeLien12 {
+    order: 1;
+    width: 100%;
+    margin-left: 0;
+  }
+  .sizeLienMobile {
+    width: 50%;
+    border-top: 0;
+    border-bottom: 5px solid #f2f2f2;
+  }
+  .sizeLiens {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .sizeLienMobile:hover {
+    border-top: 0;
+    border-bottom: 5px solid #0065fc;
+  }
+  .mobileTitreh1 {
+    font-size: x-large;
+  }
+  .bordureSearch {
+    width: 300px;
+    border: none;
+  }
+  .recherche {
+    width: 200px;
+    border-bottom: 1px solid #f2f2f2;
+    border-top: 1px solid #f2f2f2;
+  }
+  .buttonSearch {
+    width: 50px;
+    border-radius: 15px;
+  }
+  .desktopNone {
+    display: block;
+  }
+  .mobileNone {
+    display: none;
+  }
+  .margFiltre {
+    padding-left: 5%;
+  }
+  .mobileEconomique {
+    margin-right: 5px;
+  }
+  .mobilFamilial {
+    margin-right: 0;
+  }
+  .filtreTexte {
+  padding-left: 10px;
+  padding-right: 10px;
+  }
+  .info {
+    padding-left: 5%;
+  }
+  .blocPopulaires {
+    border-radius: 0;
+  }
+  .blocHebergements {
+    background-color: white;
+  }
+  .mobileTitreParent {
+    padding-left: 5%;
+  }
+  .blocActivites {
+    padding: 5%;
+    width: 90%;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  }
 }
