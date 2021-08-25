@@ -66,13 +66,17 @@ body {
   height: auto;
 }
 .sizeLiens {
-  width: 100%;
+  width: 90%;
 }
 .sizeLien12 {
-  margin-left: 60%;
+  margin-left: 65%;
+}
+.sizeLien3 {
+  margin-right: 2.5%;
+  margin-left: 1.5%;
 }
 .sizeLien {
-  width: 140px;
+  width: 160px;
   height: 99px;
 }
 .colorLien2 {
@@ -428,14 +432,17 @@ padding-left: 20px;
 .lienFoot {
   color: black;
 }
-.divLienFoot{
+.divLienFoot {
   height: 30px;
 }
 /* responsive */
 @media screen and (max-width: 1295px) {
   .sizeLien12 {
-    margin-left: 35%;
+    margin-left: 55%;
   } 
+  .sizeLien {
+    width: 150px;
+  }
   .cubeDetailsHebergements {
     min-height: 150px;
   }
@@ -452,6 +459,12 @@ padding-left: 20px;
   }
 }
 @media screen and (max-width: 990px) {
+  .sizeLien12 {
+    margin-left: 48%;
+  }
+  .sizeLien {
+    width: 120px;
+  }
   #hebergements {
     flex-direction: column-reverse;
     width: 100%;
@@ -619,7 +632,12 @@ padding-left: 20px;
     padding: 0;
   }
 }
-@media all and (min-width: 481px) and (max-width: 1920px) {
-  /* my styles for sites anywhere between mobile and large resolutions */
+@media screen and (max-width: 1900px) {
+  body {
+    max-width: 1900px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 0%;
   }
+} 
   
